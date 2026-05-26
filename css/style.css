@@ -1,0 +1,25 @@
+/* css/styles.css */
+
+/* Habilitar scroll suave al hacer clic en los enlaces del menú */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Configuración de la tipografía general */
+body { 
+    font-family: 'Inter', sans-serif; 
+}
+
+/* Imagen de fondo del Hero con opacidad controlada desde HTML */
+.hero-bg-image {
+    background-image: url('https://images.unsplash.com/photo-1629909613654-28e377c37b09?auto=format&fit=crop&q=80&w=2000');
+}
+
+/* Transiciones para el efecto dinámico del header al hacer scroll */
+header {
+    transition: padding 0.3s ease, background-color 0.3s ease;
+}
+
+#header-container {
+    transition: all 0.3s ease;
+}

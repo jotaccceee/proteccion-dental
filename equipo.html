@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nuestro Equipo Médico | Protección Dental</title>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;900&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="./css/styles.css">
+
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        .backdrop-blur-md { backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); }
+        
+        /* Fuerza un escalado uniforme para nivelar las alturas de los rostros */
+        .img-container {
+            position: relative;
+            width: 100%;
+            height: 280px; /* Altura fija estricta para que todas las fotos arranquen igual */
+            overflow: hidden;
+            background-color: #f1f5f9;
+        }
+        .img-doctor {
+            width: 100%;
+            height: 105%; /* Un ligero plus de altura para poder jugar con el reencuadre */
+            object-fit: cover;
+            object-position: top center; /* Alinea por la cabeza */
+            transition: transform 0.7s ease;
+        }
+    </style>
+</head>
+
+<body class="bg-slate-50 text-slate-800 antialiased selection:bg-blue-600 selection:text-white">
+
+    <div class="bg-slate-950 text-slate-400 text-xs py-2.5 px-6 relative z-50 border-b border-slate-900/60">
+        <div class="max-w-6xl mx-auto flex justify-between items-center">
+            <div class="flex items-center space-x-5 font-medium">
+                <span class="flex items-center gap-1.5">
+                    <svg class="w-3.5 h-3.5 text-blue-500" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z"/><path stroke-linecap="round" stroke-linejoin="round" d="M1.94 13.14c-1.3-1.31-1.3-3.43 0-4.74l.89-.9a15.05 15.05 0 0121.36 0l.89.9c1.3 1.31 1.3 3.43 0 4.74l-.89.9a15.05 15.05 0 01-21.36 0l-.89-.9z"/></svg>
+                    Luis María Drago 69, Villa Crespo
+                </span>
+                <span class="hidden sm:flex items-center gap-1.5">
+                    <svg class="w-3.5 h-3.5 text-blue-500" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                    Lunes a Sábados
+                </span>
+            </div>
+            <a href="tel:+5491134203635" class="hover:text-white transition-colors font-semibold flex items-center gap-1.5">
+                +54 9 11 3420-3635
+            </a>
+        </div>
+    </div>
+
+    <header id="main-header" class="sticky top-0 z-50 w-full bg-slate-950/95 backdrop-blur-md border-b border-slate-900 transition-all duration-300">
+        <div class="max-w-6xl mx-auto px-6 h-20 flex items-center justify-between">
+            
+            <a href="index.html" class="flex items-center space-x-3 group">
+                <div class="w-9 h-9 rounded-xl bg-blue-600 flex items-center justify-center text-white shadow-lg shadow-blue-600/30">
+                    <span class="font-bold text-base">✓</span>
+                </div>
+                <div class="flex flex-col">
+                    <span class="font-black text-base tracking-tight leading-none text-white">PROTECCIÓN</span>
+                    <span class="text-blue-500 font-bold text-[11px] tracking-widest mt-0.5">DENTAL</span>
+                </div>
+            </a>
+
+            <nav class="hidden md:flex items-center space-x-8 text-sm font-semibold text-slate-300">
+                <a href="index.html" class="hover:text-white transition-colors">Inicio</a>
+                <a href="index.html#nosotros" class="hover:text-white transition-colors">Nosotros</a>
+                <a href="index.html#sintomas" class="hover:text-white transition-colors">Síntomas</a>
+                <a href="./tratamientos/bruxismo.html" class="hover:text-blue-400 transition-colors">Bruxismo</a>
+            </nav>
+
+            <div class="flex items-center">
+                <a href="https://wa.me/5491134203635" target="_blank" class="bg-blue-600 hover:bg-blue-500 text-white text-xs sm:text-sm font-bold px-5 py-2.5 rounded-xl transition-all shadow-lg shadow-blue-600/20 tracking-wide">
+                    Solicitar Turno
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <section class="bg-slate-950 text-white py-16 lg:py-24 relative overflow-hidden border-b border-slate-900">
+        <div class="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(37,99,235,0.12),transparent_55%)]"></div>
+        <div class="absolute -left-20 -top-20 w-80 h-80 bg-blue-600/5 rounded-full filter blur-3xl pointer-events-none"></div>
+        
+        <div class="max-w-[1400px] mx-auto px-6 relative z-10">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                
+                <div class="lg:col-span-6 space-y-6 text-center lg:text-left">
+                    <nav class="flex items-center justify-center lg:justify-start space-x-2 text-xs font-semibold tracking-wide text-slate-400">
+                        <a href="index.html" class="hover:text-white transition-colors">Inicio</a>
+                        <span class="text-slate-600">
+                            <svg class="w-3 h-3" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5"/>
+                            </svg>
+                        </span>
+                        <span class="text-blue-500">Nuestros Profesionales</span>
+                    </nav>
+
+                    <h1 class="text-4xl sm:text-5xl lg:text-6xl font-black tracking-tight leading-tight">
+                        Un equipo médico <br class="hidden sm:inline">
+                        comprometido con <span class="text-blue-500">tu sonrisa</span>
+                    </h1>
+                    
+                    <p class="text-slate-400 text-base sm:text-lg max-w-2xl mx-auto lg:mx-0 font-normal leading-relaxed">
+                        En <span class="text-white font-medium">Protección Dental</span> combinamos la calidez humana con tecnología de vanguardia. Conoce a los especialistas de Villa Crespo encargados de cuidar tu salud bucal mediante diagnósticos precisos y tratamientos sin dolor.
+                    </p>
+
+                    <div class="pt-4 flex flex-wrap justify-center lg:justify-start gap-6 text-xs font-semibold text-slate-300">
+                        <span class="flex items-center gap-2">
+                            <div class="w-2 h-2 rounded-full bg-blue-500"></div> Especialistas UBA & Ateneo
+                        </span>
+                        <span class="flex items-center gap-2">
+                            <div class="w-2 h-2 rounded-full bg-blue-500"></div> Tecnología Mecanizada
+                        </span>
+                        <span class="flex items-center gap-2">
+                            <div class="w-2 h-2 rounded-full bg-blue-500"></div> Atención de Urgencias
+                        </span>
+                    </div>
+                </div>
+
+                <div class="lg:col-span-6 w-full max-w-2xl mx-auto">
+                    <div class="relative aspect-[16/10] w-full bg-slate-900 rounded-3xl overflow-hidden border border-slate-800/80 shadow-2xl shadow-blue-950/20 group">
+                        
+                        <div class="carousel-item absolute inset-0 w-full h-full opacity-100 transition-opacity duration-1000 ease-in-out">
+                            <img src="./imagenes/consuktorio1.jpg" alt="Equipo Protección Dental" class="w-full h-full object-cover">
+                            <div class="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-transparent to-transparent"></div>
+                            <div class="absolute bottom-6 left-6 right-6">
+                                <span class="bg-blue-600/90 text-white text-[10px] font-bold tracking-widest uppercase px-2.5 py-1 rounded-md backdrop-blur-sm">Instalaciones</span>
+                                <p class="text-sm font-medium text-white mt-2">Consultorios modernos equipados con la última tecnología en Villa Crespo.</p>
+                            </div>
+                        </div>
+
+                        <div class="carousel-item absolute inset-0 w-full h-full opacity-0 transition-opacity duration-1000 ease-in-out">
+                            <img src="./imagenes/consultorio2.jpg" alt="Atención Odontológica Especializada" class="w-full h-full object-cover">
+                            <div class="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-transparent to-transparent"></div>
+                            <div class="absolute bottom-6 left-6 right-6">
+                                <span class="bg-blue-600/90 text-white text-[10px] font-bold tracking-widest uppercase px-2.5 py-1 rounded-md backdrop-blur-sm">Atención Integral</span>
+                                <p class="text-sm font-medium text-white mt-2">Tratamientos personalizados y un entorno diseñado para tu tranquilidad.</p>
+                            </div>
+                        </div>
+
+                        <div class="carousel-item absolute inset-0 w-full h-full opacity-0 transition-opacity duration-1000 ease-in-out">
+                            <img src="./imagenes/consultorio3.jpg" alt="Atención Odontológica Especializada" class="w-full h-full object-cover">
+                            <div class="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-transparent to-transparent"></div>
+                            <div class="absolute bottom-6 left-6 right-6">
+                                <span class="bg-blue-600/90 text-white text-[10px] font-bold tracking-widest uppercase px-2.5 py-1 rounded-md backdrop-blur-sm">Atención Integral</span>
+                                <p class="text-sm font-medium text-white mt-2">Tratamientos personalizados y un entorno diseñado para tu tranquilidad.</p>
+                            </div>
+                        </div>
+
+                        <div class="carousel-item absolute inset-0 w-full h-full opacity-0 transition-opacity duration-1000 ease-in-out">
+                            <img src="./imagenes/consultorio4.jpg" alt="Atención Odontológica Especializada" class="w-full h-full object-cover">
+                            <div class="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-transparent to-transparent"></div>
+                            <div class="absolute bottom-6 left-6 right-6">
+                                <span class="bg-blue-600/90 text-white text-[10px] font-bold tracking-widest uppercase px-2.5 py-1 rounded-md backdrop-blur-sm">Atención Integral</span>
+                                <p class="text-sm font-medium text-white mt-2">Tratamientos personalizados y un entorno diseñado para tu tranquilidad.</p>
+                            </div>
+                        </div>
+
+                        <div class="carousel-item absolute inset-0 w-full h-full opacity-0 transition-opacity duration-1000 ease-in-out">
+                            <img src="./imagenes/consultorio5.jpg" alt="Atención Odontológica Especializada" class="w-full h-full object-cover">
+                            <div class="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-transparent to-transparent"></div>
+                            <div class="absolute bottom-6 left-6 right-6">
+                                <span class="bg-blue-600/90 text-white text-[10px] font-bold tracking-widest uppercase px-2.5 py-1 rounded-md backdrop-blur-sm">Atención Integral</span>
+                                <p class="text-sm font-medium text-white mt-2">Tratamientos personalizados y un entorno diseñado para tu tranquilidad.</p>
+                            </div>
+                        </div>
+
+                        <button onclick="prevSlide()" class="absolute left-4 top-1/2 -translate-y-1/2 w-10 h-10 rounded-xl bg-slate-950/40 backdrop-blur-md border border-slate-800 flex items-center justify-center text-white opacity-0 group-hover:opacity-100 transition-opacity hover:bg-blue-600 hover:border-blue-500 z-30">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5"/></svg>
+                        </button>
+                        <button onclick="nextSlide()" class="absolute right-4 top-1/2 -translate-y-1/2 w-10 h-10 rounded-xl bg-slate-950/40 backdrop-blur-md border border-slate-800 flex items-center justify-center text-white opacity-0 group-hover:opacity-100 transition-opacity hover:bg-blue-600 hover:border-blue-500 z-30">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5"/></svg>
+                        </button>
+
+                        <div class="absolute bottom-6 right-6 flex space-x-2 z-20">
+                            <div class="carousel-dot w-2 h-2 rounded-full bg-white transition-all duration-300"></div>
+                            <div class="carousel-dot w-2 h-2 rounded-full bg-white/40 transition-all duration-300"></div>
+                            <div class="carousel-dot w-2 h-2 rounded-full bg-white/40 transition-all duration-300"></div>
+                            <div class="carousel-dot w-2 h-2 rounded-full bg-white/40 transition-all duration-300"></div>
+                            <div class="carousel-dot w-2 h-2 rounded-full bg-white/40 transition-all duration-300"></div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="py-20 bg-white relative overflow-hidden">
+        <div class="absolute top-0 left-1/4 w-96 h-96 bg-blue-50 rounded-full filter blur-3xl opacity-30 pointer-events-none"></div>
+
+        <div class="max-w-[1400px] mx-auto px-4 sm:px-6">
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-5">
+                
+                <div class="bg-white border border-slate-200 rounded-2xl overflow-hidden shadow-sm transition-all duration-300 hover:shadow-xl hover:shadow-blue-600/5 hover:-translate-y-1.5 group flex flex-col justify-between">
+                    <div>
+                        <div class="img-container border-b border-slate-100">
+                            <img src="./imagenes/doctor juan carlos.png" alt="Dr. Juan Carlos Calderón" class="img-doctor group-hover:scale-105">
+                            <span class="absolute top-3 left-3 bg-blue-600 text-white text-[9px] font-bold tracking-widest uppercase px-2 py-0.5 rounded shadow-md z-10">Dirección Médica</span>
+                        </div>
+                        <div class="p-4 space-y-2.5">
+                            <div>
+                                <h3 class="font-bold text-slate-900 text-base tracking-tight transition-colors group-hover:text-blue-600 leading-snug">Dr. Juan Carlos Calderón</h3>
+                                <p class="text-[11px] text-blue-600 font-bold mt-0.5 uppercase tracking-wider">Cirugía Bucodental e Implantes</p>
+                            </div>
+                            <p class="text-slate-600 text-xs font-normal leading-relaxed">Con más de 20 años de experiencia que combinan la tecnología más avanzada en tratamientos dentales de alta calidad. Se especializa en Cirugía Bucodental, implantes óseos integrados y rehabilitation en general.</p>
+                        </div>
+                    </div>
+                    <div class="p-4 pt-0">
+                        <div class="border-t border-slate-100 pt-3 flex items-center justify-between">
+                            <span class="text-[10px] font-semibold text-slate-400">✓ Experiencia</span>
+                            <a href="https://wa.me/5491134203635" target="_blank" class="text-[11px] font-bold text-blue-600 hover:text-blue-700 flex items-center gap-1">Reservar</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white border border-slate-200 rounded-2xl overflow-hidden shadow-sm transition-all duration-300 hover:shadow-xl hover:shadow-blue-600/5 hover:-translate-y-1.5 group flex flex-col justify-between">
+                    <div>
+                        <div class="img-container border-b border-slate-100">
+                            <img src="./imagenes/dra virginia calderon.png" alt="Dra. Virginia Calderón" class="img-doctor group-hover:scale-105">
+                            <span class="absolute top-3 left-3 bg-slate-900 text-white text-[9px] font-bold tracking-widest uppercase px-2 py-0.5 rounded shadow-md z-10">Ortodoncia</span>
+                        </div>
+                        <div class="p-4 space-y-2.5">
+                            <div>
+                                <h3 class="font-bold text-slate-900 text-base tracking-tight transition-colors group-hover:text-blue-600">Dra. Virginia Calderón</h3>
+                                <p class="text-[11px] text-blue-600 font-bold mt-0.5 uppercase tracking-wider">Especialista en Ortodoncia</p>
+                            </div>
+                            <p class="text-slate-600 text-xs font-normal leading-relaxed">Donde la precisión en ortodoncia se encuentra con la calidez humana. Dedicada a diseñar sonrisas hermosas y saludables para todas las edades utilizando brackets estéticos y metálicos.</p>
+                        </div>
+                    </div>
+                    <div class="p-4 pt-0">
+                        <div class="border-t border-slate-100 pt-3 flex items-center justify-between">
+                            <span class="text-[10px] font-semibold text-slate-400">✓ Brackets</span>
+                            <a href="https://wa.me/5491134203635" target="_blank" class="text-[11px] font-bold text-blue-600 hover:text-blue-700 flex items-center gap-1">Reservar</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white border border-slate-200 rounded-2xl overflow-hidden shadow-sm transition-all duration-300 hover:shadow-xl hover:shadow-blue-600/5 hover:-translate-y-1.5 group flex flex-col justify-between">
+                    <div>
+                        <div class="img-container border-b border-slate-100">
+                            <img src="./imagenes/dra maria julia calderon.png" alt="Dra. María Julia Calderón" class="img-doctor group-hover:scale-105">
+                            <span class="absolute top-3 left-3 bg-slate-900 text-white text-[9px] font-bold tracking-widest uppercase px-2 py-0.5 rounded shadow-md z-10">Odontología General</span>
+                        </div>
+                        <div class="p-4 space-y-2.5">
+                            <div>
+                                <h3 class="font-bold text-slate-900 text-base tracking-tight transition-colors group-hover:text-blue-600">Dra. María Julia Calderón</h3>
+                                <p class="text-[11px] text-blue-600 font-bold mt-0.5 uppercase tracking-wider">Egresada UBA</p>
+                            </div>
+                            <p class="text-slate-600 text-xs font-normal leading-relaxed">Donde la dedicación a la salud bucal se combina con altos estándares de calidad. Especializada en limpiezas dentales, extracciones y arreglos de caries con atención meticulosa.</p>
+                        </div>
+                    </div>
+                    <div class="p-4 pt-0">
+                        <div class="border-t border-slate-100 pt-3 flex items-center justify-between">
+                            <span class="text-[10px] font-semibold text-slate-400">✓ UBA Calidad</span>
+                            <a href="https://wa.me/5491134203635" target="_blank" class="text-[11px] font-bold text-blue-600 hover:text-blue-700 flex items-center gap-1">Reservar</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white border border-slate-200 rounded-2xl overflow-hidden shadow-sm transition-all duration-300 hover:shadow-xl hover:shadow-blue-600/5 hover:-translate-y-1.5 group flex flex-col justify-between">
+                    <div>
+                        <div class="img-container border-b border-slate-100">
+                            <img src="./imagenes/dra sandra rocha.png" alt="Dra. Sandra Rocha" class="img-doctor group-hover:scale-105">
+                            <span class="absolute top-3 left-3 bg-slate-900 text-white text-[9px] font-bold tracking-widest uppercase px-2 py-0.5 rounded shadow-md z-10">Odontopediatría</span>
+                        </div>
+                        <div class="p-4 space-y-2.5">
+                            <div>
+                                <h3 class="font-bold text-slate-900 text-base tracking-tight transition-colors group-hover:text-blue-600">Dra. Sandra Rocha</h3>
+                                <p class="text-[11px] text-blue-600 font-bold mt-0.5 uppercase tracking-wider">Niños y Urgencias</p>
+                            </div>
+                            <p class="text-slate-600 text-xs font-normal leading-relaxed">Se dedica a cuidar las sonrisas más jóvenes y responder con eficacia a urgencias dentales. Trata a los niños con suavidad instalando un ambiente seguro que alivia el estrés.</p>
+                        </div>
+                    </div>
+                    <div class="p-4 pt-0">
+                        <div class="border-t border-slate-100 pt-3 flex items-center justify-between">
+                            <span class="text-[10px] font-semibold text-slate-400">✓ Niños Seguro</span>
+                            <a href="https://wa.me/5491134203635" target="_blank" class="text-[11px] font-bold text-blue-600 hover:text-blue-700 flex items-center gap-1">Reservar</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white border border-slate-200 rounded-2xl overflow-hidden shadow-sm transition-all duration-300 hover:shadow-xl hover:shadow-blue-600/5 hover:-translate-y-1.5 group flex flex-col justify-between">
+                    <div>
+                        <div class="img-container border-b border-slate-100">
+                            <img src="./imagenes/dra dasha curbanova.png" alt="Dra. Dasha Gubanova" class="img-doctor group-hover:scale-105">
+                            <span class="absolute top-3 left-3 bg-slate-900 text-white text-[9px] font-bold tracking-widest uppercase px-2 py-0.5 rounded shadow-md z-10">Endodoncia</span>
+                        </div>
+                        <div class="p-4 space-y-2.5">
+                            <div>
+                                <h3 class="font-bold text-slate-900 text-base tracking-tight transition-colors group-hover:text-blue-600">Dra. Dasha Gubanova</h3>
+                                <p class="text-[11px] text-blue-600 font-bold mt-0.5 uppercase tracking-wider">Especialista del Ateneo</p>
+                            </div>
+                            <p class="text-slate-600 text-xs font-normal leading-relaxed">Especialista en endodoncia. Cuenta con tecnología mecanizada moderna para realizar tratamientos de conducto rápidos, eficientes, confortables y sumamente precisos.</p>
+                        </div>
+                    </div>
+                    <div class="p-4 pt-0">
+                        <div class="border-t border-slate-100 pt-3 flex items-center justify-between">
+                            <span class="text-[10px] font-semibold text-slate-400">✓ Conductos</span>
+                            <a href="https://wa.me/5491134203635" target="_blank" class="text-[11px] font-bold text-blue-600 hover:text-blue-700 flex items-center gap-1">Reservar</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <script>
+        // Efecto scroll en Header
+        window.addEventListener('scroll', () => {
+            const header = document.getElementById('main-header');
+            if (window.scrollY > 20) {
+                header.classList.add('bg-slate-950/95', 'shadow-lg', 'shadow-slate-950/20');
+            } else {
+                header.classList.remove('shadow-lg');
+            }
+        });
+
+        // Lógica Interactiva del Carrusel
+        let currentSlide = 0;
+        const slides = document.querySelectorAll('.carousel-item');
+        const dots = document.querySelectorAll('.carousel-dot');
+        const slideInterval = 5000; // Cambia cada 5 segundos
+
+        function showSlide(index) {
+            slides.forEach((slide, i) => {
+                if (i === index) {
+                    slide.classList.remove('opacity-0', 'pointer-events-none');
+                    slide.classList.add('opacity-100');
+                    if (dots[i]) {
+                        dots[i].classList.remove('bg-white/40');
+                        dots[i].classList.add('bg-white', 'w-4');
+                    }
+                } else {
+                    slide.classList.remove('opacity-100');
+                    slide.classList.add('opacity-0', 'pointer-events-none');
+                    if (dots[i]) {
+                        dots[i].classList.remove('bg-white', 'w-4');
+                        dots[i].classList.add('bg-white/40');
+                    }
+                }
+            });
+        }
+
+        function nextSlide() {
+            currentSlide = (currentSlide + 1) % slides.length;
+            showSlide(currentSlide);
+        }
+
+        function prevSlide() {
+            currentSlide = (currentSlide - 1 + slides.length) % slides.length;
+            showSlide(currentSlide);
+        }
+
+        // Temporizador de ciclo automático
+        let autoSlide = setInterval(nextSlide, slideInterval);
+
+        function resetTimer() {
+            clearInterval(autoSlide);
+            autoSlide = setInterval(nextSlide, slideInterval);
+        }
+        
+        // Asignar el reset de tiempo a los botones de flechas
+        document.querySelectorAll('button').forEach(btn => {
+            btn.addEventListener('click', resetTimer);
+        });
+    </script>
+</body>
+</html>

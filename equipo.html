@@ -205,125 +205,142 @@
     </section>
 
     <section class="py-20 bg-white relative overflow-hidden">
-        <div class="absolute top-0 left-1/4 w-96 h-96 bg-blue-50 rounded-full filter blur-3xl opacity-30 pointer-events-none"></div>
+    <style>
+        /* Ajuste de las imágenes para mejor visualización */
+        .img-container {
+            position: relative;
+            width: 100%;
+            height: 400px; 
+            overflow: hidden;
+            background-color: #f1f5f9;
+        }
+        .img-doctor {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center; /* Centra la imagen para evitar cortes bruscos */
+            transition: transform 0.7s ease;
+        }
+    </style>
 
-        <div class="max-w-[1400px] mx-auto px-4 sm:px-6">
-            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-5">
-                
-                <div class="bg-white border border-slate-200 rounded-2xl overflow-hidden shadow-sm transition-all duration-300 hover:shadow-xl hover:shadow-blue-600/5 hover:-translate-y-1.5 group flex flex-col justify-between">
-                    <div>
-                        <div class="img-container border-b border-slate-100">
-                            <img src="./imagenes/doctor juan carlos.png" alt="Dr. Juan Carlos Calderón" class="img-doctor group-hover:scale-105">
-                            <span class="absolute top-3 left-3 bg-blue-600 text-white text-[9px] font-bold tracking-widest uppercase px-2 py-0.5 rounded shadow-md z-10">Dirección Médica</span>
-                        </div>
-                        <div class="p-4 space-y-2.5">
-                            <div>
-                                <h3 class="font-bold text-slate-900 text-base tracking-tight transition-colors group-hover:text-blue-600 leading-snug">Dr. Juan Carlos Calderón</h3>
-                                <p class="text-[11px] text-blue-600 font-bold mt-0.5 uppercase tracking-wider">Cirugía Bucodental e Implantes</p>
-                            </div>
-                            <p class="text-slate-600 text-xs font-normal leading-relaxed">Con más de 20 años de experiencia que combinan la tecnología más avanzada en tratamientos dentales de alta calidad. Se especializa en Cirugía Bucodental, implantes óseos integrados y rehabilitation en general.</p>
-                        </div>
+    <div class="absolute top-0 left-1/4 w-96 h-96 bg-blue-50 rounded-full filter blur-3xl opacity-30 pointer-events-none"></div>
+
+    <div class="max-w-[1400px] mx-auto px-4 sm:px-6">
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-5">
+            
+            <div class="bg-white border border-slate-200 rounded-2xl overflow-hidden shadow-sm transition-all duration-300 hover:shadow-xl hover:shadow-blue-600/5 hover:-translate-y-1.5 group flex flex-col justify-between">
+                <div>
+                    <div class="img-container border-b border-slate-100">
+                        <img src="./imagenes/doctor juan carlos.png" alt="Dr. Juan Carlos Calderón" class="img-doctor  group-hover:scale-105">
+                        <span class="absolute top-3 left-3 bg-blue-600 text-white text-[9px] font-bold tracking-widest uppercase px-2 py-0.5 rounded shadow-md z-10">Dirección Médica</span>
                     </div>
-                    <div class="p-4 pt-0">
-                        <div class="border-t border-slate-100 pt-3 flex items-center justify-between">
-                            <span class="text-[10px] font-semibold text-slate-400">✓ Experiencia</span>
-                            <a href="https://wa.me/5491134203635" target="_blank" class="text-[11px] font-bold text-blue-600 hover:text-blue-700 flex items-center gap-1">Reservar</a>
+                    <div class="p-4 space-y-2.5">
+                        <div>
+                            <h3 class="font-bold text-slate-900 text-base tracking-tight transition-colors group-hover:text-blue-600 leading-snug">Dr. Juan Carlos Calderón</h3>
+                            <p class="text-[11px] text-blue-600 font-bold mt-0.5 uppercase tracking-wider">Cirugía Bucodental e Implantes</p>
                         </div>
+                        <p class="text-slate-600 text-xs font-normal leading-relaxed">Con más de 20 años de experiencia que combinan la tecnología más avanzada en tratamientos dentales de alta calidad. Se especializa en Cirugía Bucodental, implantes óseos integrados y rehabilitation en general.</p>
                     </div>
                 </div>
-
-                <div class="bg-white border border-slate-200 rounded-2xl overflow-hidden shadow-sm transition-all duration-300 hover:shadow-xl hover:shadow-blue-600/5 hover:-translate-y-1.5 group flex flex-col justify-between">
-                    <div>
-                        <div class="img-container border-b border-slate-100">
-                            <img src="./imagenes/dra virginia calderon.png" alt="Dra. Virginia Calderón" class="img-doctor group-hover:scale-105">
-                            <span class="absolute top-3 left-3 bg-slate-900 text-white text-[9px] font-bold tracking-widest uppercase px-2 py-0.5 rounded shadow-md z-10">Ortodoncia</span>
-                        </div>
-                        <div class="p-4 space-y-2.5">
-                            <div>
-                                <h3 class="font-bold text-slate-900 text-base tracking-tight transition-colors group-hover:text-blue-600">Dra. Virginia Calderón</h3>
-                                <p class="text-[11px] text-blue-600 font-bold mt-0.5 uppercase tracking-wider">Especialista en Ortodoncia</p>
-                            </div>
-                            <p class="text-slate-600 text-xs font-normal leading-relaxed">Donde la precisión en ortodoncia se encuentra con la calidez humana. Dedicada a diseñar sonrisas hermosas y saludables para todas las edades utilizando brackets estéticos y metálicos.</p>
-                        </div>
-                    </div>
-                    <div class="p-4 pt-0">
-                        <div class="border-t border-slate-100 pt-3 flex items-center justify-between">
-                            <span class="text-[10px] font-semibold text-slate-400">✓ Brackets</span>
-                            <a href="https://wa.me/5491134203635" target="_blank" class="text-[11px] font-bold text-blue-600 hover:text-blue-700 flex items-center gap-1">Reservar</a>
-                        </div>
+                <div class="p-4 pt-0">
+                    <div class="border-t border-slate-100 pt-3 flex items-center justify-between">
+                        <span class="text-[10px] font-semibold text-slate-400">✓ Experiencia</span>
+                        <a href="https://wa.me/5491134203635" target="_blank" class="text-[11px] font-bold text-blue-600 hover:text-blue-700 flex items-center gap-1">Reservar</a>
                     </div>
                 </div>
-
-                <div class="bg-white border border-slate-200 rounded-2xl overflow-hidden shadow-sm transition-all duration-300 hover:shadow-xl hover:shadow-blue-600/5 hover:-translate-y-1.5 group flex flex-col justify-between">
-                    <div>
-                        <div class="img-container border-b border-slate-100">
-                            <img src="./imagenes/dra maria julia calderon.png" alt="Dra. María Julia Calderón" class="img-doctor group-hover:scale-105">
-                            <span class="absolute top-3 left-3 bg-slate-900 text-white text-[9px] font-bold tracking-widest uppercase px-2 py-0.5 rounded shadow-md z-10">Odontología General</span>
-                        </div>
-                        <div class="p-4 space-y-2.5">
-                            <div>
-                                <h3 class="font-bold text-slate-900 text-base tracking-tight transition-colors group-hover:text-blue-600">Dra. María Julia Calderón</h3>
-                                <p class="text-[11px] text-blue-600 font-bold mt-0.5 uppercase tracking-wider">Egresada UBA</p>
-                            </div>
-                            <p class="text-slate-600 text-xs font-normal leading-relaxed">Donde la dedicación a la salud bucal se combina con altos estándares de calidad. Especializada en limpiezas dentales, extracciones y arreglos de caries con atención meticulosa.</p>
-                        </div>
-                    </div>
-                    <div class="p-4 pt-0">
-                        <div class="border-t border-slate-100 pt-3 flex items-center justify-between">
-                            <span class="text-[10px] font-semibold text-slate-400">✓ UBA Calidad</span>
-                            <a href="https://wa.me/5491134203635" target="_blank" class="text-[11px] font-bold text-blue-600 hover:text-blue-700 flex items-center gap-1">Reservar</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="bg-white border border-slate-200 rounded-2xl overflow-hidden shadow-sm transition-all duration-300 hover:shadow-xl hover:shadow-blue-600/5 hover:-translate-y-1.5 group flex flex-col justify-between">
-                    <div>
-                        <div class="img-container border-b border-slate-100">
-                            <img src="./imagenes/dra sandra rocha.png" alt="Dra. Sandra Rocha" class="img-doctor group-hover:scale-105">
-                            <span class="absolute top-3 left-3 bg-slate-900 text-white text-[9px] font-bold tracking-widest uppercase px-2 py-0.5 rounded shadow-md z-10">Odontopediatría</span>
-                        </div>
-                        <div class="p-4 space-y-2.5">
-                            <div>
-                                <h3 class="font-bold text-slate-900 text-base tracking-tight transition-colors group-hover:text-blue-600">Dra. Sandra Rocha</h3>
-                                <p class="text-[11px] text-blue-600 font-bold mt-0.5 uppercase tracking-wider">Niños y Urgencias</p>
-                            </div>
-                            <p class="text-slate-600 text-xs font-normal leading-relaxed">Se dedica a cuidar las sonrisas más jóvenes y responder con eficacia a urgencias dentales. Trata a los niños con suavidad instalando un ambiente seguro que alivia el estrés.</p>
-                        </div>
-                    </div>
-                    <div class="p-4 pt-0">
-                        <div class="border-t border-slate-100 pt-3 flex items-center justify-between">
-                            <span class="text-[10px] font-semibold text-slate-400">✓ Niños Seguro</span>
-                            <a href="https://wa.me/5491134203635" target="_blank" class="text-[11px] font-bold text-blue-600 hover:text-blue-700 flex items-center gap-1">Reservar</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="bg-white border border-slate-200 rounded-2xl overflow-hidden shadow-sm transition-all duration-300 hover:shadow-xl hover:shadow-blue-600/5 hover:-translate-y-1.5 group flex flex-col justify-between">
-                    <div>
-                        <div class="img-container border-b border-slate-100">
-                            <img src="./imagenes/dra dasha curbanova.png" alt="Dra. Dasha Gubanova" class="img-doctor group-hover:scale-105">
-                            <span class="absolute top-3 left-3 bg-slate-900 text-white text-[9px] font-bold tracking-widest uppercase px-2 py-0.5 rounded shadow-md z-10">Endodoncia</span>
-                        </div>
-                        <div class="p-4 space-y-2.5">
-                            <div>
-                                <h3 class="font-bold text-slate-900 text-base tracking-tight transition-colors group-hover:text-blue-600">Dra. Dasha Gubanova</h3>
-                                <p class="text-[11px] text-blue-600 font-bold mt-0.5 uppercase tracking-wider">Especialista del Ateneo</p>
-                            </div>
-                            <p class="text-slate-600 text-xs font-normal leading-relaxed">Especialista en endodoncia. Cuenta con tecnología mecanizada moderna para realizar tratamientos de conducto rápidos, eficientes, confortables y sumamente precisos.</p>
-                        </div>
-                    </div>
-                    <div class="p-4 pt-0">
-                        <div class="border-t border-slate-100 pt-3 flex items-center justify-between">
-                            <span class="text-[10px] font-semibold text-slate-400">✓ Conductos</span>
-                            <a href="https://wa.me/5491134203635" target="_blank" class="text-[11px] font-bold text-blue-600 hover:text-blue-700 flex items-center gap-1">Reservar</a>
-                        </div>
-                    </div>
-                </div>
-
             </div>
-        </div>
-    </section>
 
+            <div class="bg-white border border-slate-200 rounded-2xl overflow-hidden shadow-sm transition-all duration-300 hover:shadow-xl hover:shadow-blue-600/5 hover:-translate-y-1.5 group flex flex-col justify-between">
+                <div>
+                    <div class="img-container border-b border-slate-100">
+                        <img src="./imagenes/dra virginia calderon.png" alt="Dra. Virginia Calderón" class="img-doctor group-hover:scale-105">
+                        <span class="absolute top-3 left-3 bg-slate-900 text-white text-[9px] font-bold tracking-widest uppercase px-2 py-0.5 rounded shadow-md z-10">Ortodoncia</span>
+                    </div>
+                    <div class="p-4 space-y-2.5">
+                        <div>
+                            <h3 class="font-bold text-slate-900 text-base tracking-tight transition-colors group-hover:text-blue-600">Dra. Virginia Calderón</h3>
+                            <p class="text-[11px] text-blue-600 font-bold mt-0.5 uppercase tracking-wider">Especialista en Ortodoncia</p>
+                        </div>
+                        <p class="text-slate-600 text-xs font-normal leading-relaxed">Donde la precisión en ortodoncia se encuentra con la calidez humana. Dedicada a diseñar sonrisas hermosas y saludables para todas las edades utilizando brackets estéticos y metálicos.</p>
+                    </div>
+                </div>
+                <div class="p-4 pt-0">
+                    <div class="border-t border-slate-100 pt-3 flex items-center justify-between">
+                        <span class="text-[10px] font-semibold text-slate-400">✓ Brackets</span>
+                        <a href="https://wa.me/5491134203635" target="_blank" class="text-[11px] font-bold text-blue-600 hover:text-blue-700 flex items-center gap-1">Reservar</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-white border border-slate-200 rounded-2xl overflow-hidden shadow-sm transition-all duration-300 hover:shadow-xl hover:shadow-blue-600/5 hover:-translate-y-1.5 group flex flex-col justify-between">
+                <div>
+                    <div class="img-container border-b border-slate-100">
+                        <img src="./imagenes/dra maria julia calderon.png" alt="Dra. María Julia Calderón" class="img-doctor group-hover:scale-105">
+                        <span class="absolute top-3 left-3 bg-slate-900 text-white text-[9px] font-bold tracking-widest uppercase px-2 py-0.5 rounded shadow-md z-10">Odontología General</span>
+                    </div>
+                    <div class="p-4 space-y-2.5">
+                        <div>
+                            <h3 class="font-bold text-slate-900 text-base tracking-tight transition-colors group-hover:text-blue-600">Dra. María Julia Calderón</h3>
+                            <p class="text-[11px] text-blue-600 font-bold mt-0.5 uppercase tracking-wider">Egresada UBA</p>
+                        </div>
+                        <p class="text-slate-600 text-xs font-normal leading-relaxed">Donde la dedicación a la salud bucal se combina con altos estándares de calidad. Especializada en limpiezas dentales, extracciones y arreglos de caries con atención meticulosa.</p>
+                    </div>
+                </div>
+                <div class="p-4 pt-0">
+                    <div class="border-t border-slate-100 pt-3 flex items-center justify-between">
+                        <span class="text-[10px] font-semibold text-slate-400">✓ UBA Calidad</span>
+                        <a href="https://wa.me/5491134203635" target="_blank" class="text-[11px] font-bold text-blue-600 hover:text-blue-700 flex items-center gap-1">Reservar</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-white border border-slate-200 rounded-2xl overflow-hidden shadow-sm transition-all duration-300 hover:shadow-xl hover:shadow-blue-600/5 hover:-translate-y-1.5 group flex flex-col justify-between">
+                <div>
+                    <div class="img-container border-b border-slate-100">
+                        <img src="./imagenes/dra sandra rocha.png" alt="Dra. Sandra Rocha" class="img-doctor group-hover:scale-105">
+                        <span class="absolute top-3 left-3 bg-slate-900 text-white text-[9px] font-bold tracking-widest uppercase px-2 py-0.5 rounded shadow-md z-10">Odontopediatría</span>
+                    </div>
+                    <div class="p-4 space-y-2.5">
+                        <div>
+                            <h3 class="font-bold text-slate-900 text-base tracking-tight transition-colors group-hover:text-blue-600">Dra. Sandra Rocha</h3>
+                            <p class="text-[11px] text-blue-600 font-bold mt-0.5 uppercase tracking-wider">Niños y Urgencias</p>
+                        </div>
+                        <p class="text-slate-600 text-xs font-normal leading-relaxed">Se dedica a cuidar las sonrisas más jóvenes y responder con eficacia a urgencias dentales. Trata a los niños con suavidad instalando un ambiente seguro que alivia el estrés.</p>
+                    </div>
+                </div>
+                <div class="p-4 pt-0">
+                    <div class="border-t border-slate-100 pt-3 flex items-center justify-between">
+                        <span class="text-[10px] font-semibold text-slate-400">✓ Niños Seguro</span>
+                        <a href="https://wa.me/5491134203635" target="_blank" class="text-[11px] font-bold text-blue-600 hover:text-blue-700 flex items-center gap-1">Reservar</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-white border border-slate-200 rounded-2xl overflow-hidden shadow-sm transition-all duration-300 hover:shadow-xl hover:shadow-blue-600/5 hover:-translate-y-1.5 group flex flex-col justify-between">
+                <div>
+                    <div class="img-container border-b border-slate-100">
+                        <img src="./imagenes/dra dasha curbanova.png" alt="Dra. Dasha Gubanova" class="img-doctor group-hover:scale-105">
+                        <span class="absolute top-3 left-3 bg-slate-900 text-white text-[9px] font-bold tracking-widest uppercase px-2 py-0.5 rounded shadow-md z-10">Endodoncia</span>
+                    </div>
+                    <div class="p-4 space-y-2.5">
+                        <div>
+                            <h3 class="font-bold text-slate-900 text-base tracking-tight transition-colors group-hover:text-blue-600">Dra. Dasha Gubanova</h3>
+                            <p class="text-[11px] text-blue-600 font-bold mt-0.5 uppercase tracking-wider">Especialista del Ateneo</p>
+                        </div>
+                        <p class="text-slate-600 text-xs font-normal leading-relaxed">Especialista en endodoncia. Cuenta con tecnología mecanizada moderna para realizar tratamientos de conducto rápidos, eficientes, confortables y sumamente precisos.</p>
+                    </div>
+                </div>
+                <div class="p-4 pt-0">
+                    <div class="border-t border-slate-100 pt-3 flex items-center justify-between">
+                        <span class="text-[10px] font-semibold text-slate-400">✓ Conductos</span>
+                        <a href="https://wa.me/5491134203635" target="_blank" class="text-[11px] font-bold text-blue-600 hover:text-blue-700 flex items-center gap-1">Reservar</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
     <script>
         // Efecto scroll en Header
         window.addEventListener('scroll', () => {
